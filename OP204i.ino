@@ -1,4 +1,6 @@
-#include <Wire.h>  // pin A4 (SDA), A5 (SCL), SSD1311 PMOLED Controller
+#include <Wire.h>
+// on Arduino: pin A4 (SDA), A5 (SCL), SSD1311 PMOLED Controller
+// on Teensy: pin 18 (SDA), 19 (SCL), SSD1311 PMOLED Controller
 #define OLED_Address 0x3C
 #define OLED_Command_Mode 0x80  // Control byte indicates next byte will be a command
 #define OLED_Data_Mode 0x40     // Control byte indicates next byte will be data
