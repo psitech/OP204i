@@ -12,13 +12,13 @@ void setup()
   SSD1311_init();
 
   sendCommand(0x80);    // set DDRAM location 00h
-  send_string("Line 1 -------------");
+  sendString("Line 1 -------------");
   sendCommand(0xA0);    // set DDRAM location 20h
-  send_string("Line 2 -------------");
+  sendString("Line 2 -------------");
   sendCommand(0xC0);    // set DDRAM location 40h
-  send_string("Line 3 -------------");
+  sendString("Line 3 -------------");
   sendCommand(0xE0);    // set DDRAM location 60h
-  send_string("Line 4 -------------");
+  sendString("Line 4 -------------");
 }
 
 void loop()
